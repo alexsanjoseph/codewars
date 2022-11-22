@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-var _ = FDescribe("Tests", func() {
+var _ = Describe("Tests", func() {
 	It("Sample tests", func() {
 		Expect(HumanReadableTime(0)).To(Equal("00:00:00"))
 		Expect(HumanReadableTime(59)).To(Equal("00:00:59"))
