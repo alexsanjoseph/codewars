@@ -11,7 +11,7 @@ import (
 
 func TestKata(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Kata Suite")
+	RunSpecs(t, "Kyu6")
 }
 
 var _ = Describe("Example tests", func() {
