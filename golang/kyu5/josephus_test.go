@@ -13,12 +13,12 @@ func dotest(items []interface{}, k int, exp []interface{}) {
 	Expect(ans).To(Equal(exp))
 }
 
-var _ = FDescribe("Sample Tests", func() {
+var _ = Describe("Sample Tests", func() {
 	It("should handle basic test cases", func() {
 		items := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 		result := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 		k := 1
-		// dotest(items, k, result)
+		dotest(items, k, result)
 		items = []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 		result = []interface{}{2, 4, 6, 8, 10, 3, 7, 1, 9, 5}
 		k = 2
